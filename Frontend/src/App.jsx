@@ -9,7 +9,7 @@ const [products,setproducts]=useState([]);
     
     async function APICALL() {
       console.log("Data is coming");
-      const datas= await fetch(`http://localhost:3000/data`)
+      const datas= await fetch(`https://ecommerce-z6v3.onrender.com/data`)
       let data=await datas.json()
       console.log(data);
       setproducts(data[0].products);
